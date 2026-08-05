@@ -1,0 +1,81 @@
+# TOCA Football
+
+> TOCA Football, Inc. is a technology-enabled soccer experience and entertainment company headquartered in Costa Mesa, California, built on the training methodology of former US international and Premier League player Eddie Lewis. It runs two businesses: TOCA Soccer, a network of indoor soccer training centers across the United States, Canada and Mexico (private training, classes, clinics, camps, youth and adult leagues, tournaments and pickup play), and TOCA Social, a soccer-themed dining and entertainment venue brand. TOCA is the official soccer training partner of Major League Soccer.
+
+TOCA is a consumer sports and location-based-entertainment operator, not a software vendor. As of 2026-08-05 it publishes **no public API, no developer portal, no API documentation, no SDK, no webhooks and no machine-readable API contract**. Do not assume or invent an `api.tocafootball.com`, `docs.tocafootball.com` or `developer.tocafootball.com` endpoint — none of those hosts resolve (DNS resolution failed on all three). The customer portal at `my.tocafootball.com` is a client-rendered single-page app backed by Google Firebase; it is an authenticated end-user surface, not a documented API, and it answers HTTP 200 with its HTML shell for every path, including `/openapi.json` and `/.well-known/*`, so a 200 from that host is not evidence of a document.
+
+Its software ships only as end-user products: the MyTOCA player app (session booking, payments, performance tracking, player cards, leaderboards) and the TOCA Remote app (phone control of the in-center ball-delivery machine), plus in-venue smart-target and ball-machine systems.
+
+## Company
+
+- [TOCA Football](https://www.tocafootball.com/): company website
+- [About TOCA](https://www.tocafootball.com/about): company story and training methodology
+- [TOCA Soccer Centers](https://www.tocafootball.com/soccer-centers): the center network across the US, Canada and Mexico
+- [TOCA Social](https://www.toca.social/): soccer-themed dining and entertainment venue brand
+- [TOCA Fútbol (Mexico)](https://www.tocafutbol.com.mx/): Mexican franchise operation
+- [Patents](https://www.tocafootball.com/patents): TOCA's published patent list for its training technology
+- [Licensing](https://www.tocafootball.com/licensing): licensing program
+- [Partnerships](https://www.tocafootball.com/partnerships): partnership program
+
+## Products and programs
+
+- [MyTOCA](https://www.tocafootball.com/mytoca): the player app — booking, payments, performance tracking, player cards, leaderboards
+- [MyTOCA portal](https://my.tocafootball.com/): the web portal for the same account (authenticated SPA)
+- [Private soccer skills training](https://www.tocafootball.com/private-soccer-skills-training)
+- [Classes](https://www.tocafootball.com/classes) · [Clinics](https://www.tocafootball.com/soccer-clinics) · [Camps](https://www.tocafootball.com/camps)
+- [Youth leagues](https://www.tocafootball.com/youth-soccer-leagues) · [Adult leagues](https://www.tocafootball.com/adult-soccer-leagues) · [Adult pickup](https://www.tocafootball.com/adult-pickup-soccer)
+- [Tournaments](https://www.tocafootball.com/tournaments) · [Venue and field rental](https://www.tocafootball.com/venue-field-rental) · [Parties](https://www.tocafootball.com/parties)
+- [Free trial](https://www.tocafootball.com/soccer-free-trial)
+
+## Mobile apps
+
+- [TOCA Football, Inc. on the App Store](https://apps.apple.com/us/developer/toca-football-inc/id913300483): the publisher's iOS app list
+- [TOCA Remote (iOS)](https://apps.apple.com/us/app/toca-remote/id1560360066): controls the in-center ball-delivery machine
+- [TOCA Fútbol (Android)](https://play.google.com/store/apps/details?id=com.tiim.toca)
+
+## Content
+
+- [Articles](https://www.tocafootball.com/articles): TOCA's article/blog surface
+- [News](https://www.tocafootball.com/news): company news and press releases
+
+## Code and packages
+
+- [TOCA-LLC on GitHub](https://github.com/TOCA-LLC): the company's GitHub organization ("TOCA Football, Inc.", created 2015-01-28). Two public repositories, neither of them a client library or API surface:
+  - [snowflake_dbt](https://github.com/TOCA-LLC/snowflake_dbt): a base Docker image with Snowflake and dbt pre-installed, for CI/CD workflows
+  - [PlayerPathwayTool](https://github.com/TOCA-LLC/PlayerPathwayTool): a Java tool
+- No first-party client library was found on npm, PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist or crates.io.
+
+## Support and commerce
+
+- [Support / help center](https://support.tocafootball.com/support/home)
+- [Contact](https://www.tocafootball.com/contact-us)
+- [Shop](https://shop.tocafootball.com/)
+- [Careers](https://www.tocafootball.com/careers)
+
+## Policies
+
+- [Terms of service](https://www.tocafootball.com/policies/terms-of-service)
+- [Privacy policy](https://www.tocafootball.com/policies/privacy-policy)
+- [Cancellation policy](https://www.tocafootball.com/policies/cancellation)
+- [Waiver](https://www.tocafootball.com/policies/waiver)
+
+## Social
+
+- [LinkedIn](https://www.linkedin.com/company/toca-football)
+- [YouTube](https://www.youtube.com/user/tocafootball)
+- [Instagram](https://www.instagram.com/tocafootball)
+- [Facebook](https://www.facebook.com/TOCAsoccer/)
+- [TikTok](https://www.tiktok.com/@tocafootball)
+
+## Investment
+
+- [Forge Global](https://forgeglobal.com/toca-football_stock/): secondary-market listing for private shares
+
+## Security posture
+
+See `security/toca-football-domain-security.yml` in this repository for the probed TLS/HSTS/DNS posture of `www.tocafootball.com` and the `tocafootball.com` domain. No `/.well-known/security.txt`, vulnerability-disclosure page or trust center was found on any TOCA host.
+
+---
+generated: '2026-08-05'
+method: generated
+source: apis.yml + probed TOCA public web surface (no /llms.txt published; https://www.tocafootball.com/llms.txt returned 404)

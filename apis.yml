@@ -1,7 +1,18 @@
 aid: toca-football
 name: TOCA Football
-description: 'TOCA Football is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'TOCA Football, Inc. is a technology-enabled soccer experience and entertainment
+  company headquartered in Costa Mesa, California, founded on the training methodology
+  of former US international and Premier League player Eddie Lewis. It operates two
+  businesses: TOCA Soccer, a network of indoor soccer training centers across the United
+  States, Canada and Mexico offering private training, classes, clinics, camps, youth
+  and adult leagues, tournaments and pickup play; and TOCA Social, a soccer-themed
+  dining and entertainment venue brand. Its training centers pair a proprietary ball-delivery
+  machine and digitalized smart targets with the MyTOCA player app, which tracks session
+  performance, player cards, leaderboards and progress. TOCA is the official soccer
+  training partner of Major League Soccer. TOCA publishes no public API, SDK, webhook
+  or developer program: its software ships only as end-user consumer apps and in-venue
+  systems.'
+image: https://cdn.prod.website-files.com/60c7be61132e3a9edf0a3315/69656c31b8bcac0228627149_indoor-soccer-practice-training-programs-toca.jpg
 url: https://raw.githubusercontent.com/api-evangelist/toca-football/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,16 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Sports
+- Soccer
+- Sports Technology
+- Youth Sports
+- Training
+- Fitness
+- Entertainment
+- Location-Based Entertainment
+- Consumer Mobile Apps
+- United States
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,79 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/toca-football-domain-security.yml
+- type: LLMsTxt
+  url: llms/toca-football-llms.txt
 - type: Website
+  url: https://www.tocafootball.com/
+- type: About
+  url: https://www.tocafootball.com/about
+- type: Support
+  url: https://support.tocafootball.com/support/home
+- type: Blog
+  url: https://www.tocafootball.com/articles
+- type: Press
+  url: https://www.tocafootball.com/news
+- type: GitHubOrganization
+  url: https://github.com/TOCA-LLC
+- type: SignUp
+  url: https://my.tocafootball.com/auth/signup
+- type: Login
+  url: https://my.tocafootball.com/
+- type: TermsOfService
+  url: https://www.tocafootball.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.tocafootball.com/policies/privacy-policy
+- type: Contact
+  url: https://www.tocafootball.com/contact-us
+- type: Careers
+  url: https://www.tocafootball.com/careers
+- type: Partners
+  url: https://www.tocafootball.com/partnerships
+- type: Licensing
+  url: https://www.tocafootball.com/licensing
+- type: Patents
+  url: https://www.tocafootball.com/patents
+- type: Shop
+  url: https://shop.tocafootball.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/toca-football
+- type: YouTube
+  url: https://www.youtube.com/user/tocafootball
+- type: Instagram
+  url: https://www.instagram.com/tocafootball
+- type: Facebook
+  url: https://www.facebook.com/TOCAsoccer/
+- type: SecondaryMarket
   url: https://forgeglobal.com/toca-football_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: TOCA ships software only as consumer end-user products (the MyTOCA booking/performance
+    app and the TOCA Remote ball-machine controller); api., docs. and developer.tocafootball.com
+    do not resolve in DNS, and the only public code the company publishes is a two-repo
+    GitHub org holding a Snowflake/dbt CI image and a Java player-pathway tool.
+  evidence:
+  - url: https://www.tocafootball.com/openapi.json
+    status: 404
+  - url: https://www.tocafootball.com/llms.txt
+    status: 404
+  - url: https://www.tocafootball.com/.well-known/security.txt
+    status: 404
+  - url: https://www.tocafootball.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.tocafootball.com/
+    status: 0
+  - url: https://developer.tocafootball.com/
+    status: 0
+  - url: https://docs.tocafootball.com/
+    status: 0
+  - url: https://api.github.com/orgs/TOCA-LLC/repos
+    status: 200
+  checked: '2026-08-05'

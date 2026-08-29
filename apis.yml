@@ -12,6 +12,17 @@ description: 'TOCA Football, Inc. is a technology-enabled soccer experience and 
   training partner of Major League Soccer. TOCA publishes no public API, SDK, webhook
   or developer program: its software ships only as end-user consumer apps and in-venue
   systems.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/60c7be61132e3a9edf0a3315/69656c31b8bcac0228627149_indoor-soccer-practice-training-programs-toca.jpg
 url: https://raw.githubusercontent.com/api-evangelist/toca-football/refs/heads/main/apis.yml
 x-type: company
